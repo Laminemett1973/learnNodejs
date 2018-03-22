@@ -18,7 +18,7 @@ var addNote = (title,body) => {
     body:body
   };
 
-  var duplicateNote = notes.filter(note => note.title === title);
+  var duplicateNote = notes.filter((note) => note.title === title);
   if (duplicateNote.length === 0  ) {
     notes.push(note);
     saveNotes(notes);
