@@ -17,7 +17,7 @@ var addNote = (title,body) => {
     title :title,
     body:body
   };
-
+  //ignore workspace .xml
   var duplicateNote = notes.filter((note) => note.title === title);
   if (duplicateNote.length === 0  ) {
     notes.push(note);
